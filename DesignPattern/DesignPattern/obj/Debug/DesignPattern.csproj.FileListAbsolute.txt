@@ -1,0 +1,6 @@
+D:\XKZ\DesignPattern\DesignPattern\DesignPattern\bin\Debug\DesignPattern.exe
+D:\XKZ\DesignPattern\DesignPattern\DesignPattern\bin\Debug\DesignPattern.pdb
+D:\XKZ\DesignPattern\DesignPattern\DesignPattern\obj\Debug\DesignPattern.csproj.AssemblyReference.cache
+D:\XKZ\DesignPattern\DesignPattern\DesignPattern\obj\Debug\DesignPattern.csproj.CoreCompileInputs.cache
+D:\XKZ\DesignPattern\DesignPattern\DesignPattern\obj\Debug\DesignPattern.exe
+D:\XKZ\DesignPattern\DesignPattern\DesignPattern\obj\Debug\DesignPattern.pdb

@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Threading;
 using System.Threading.Tasks;
 
+// ReSharper disable once CheckNamespace
 namespace SingletonPattern
 {
     internal class Program
@@ -72,8 +72,7 @@ namespace SingletonPattern
             //-结束
             //****
             //多线程调用单例模式 C
-            for (int i = 0; i < 10; i++)
-            {
+            for (var i = 0; i < 10; i++)
                 // Thread thread = new Thread(() =>
                 // {
                 //     SingletonClass singletonClass1 = SingletonClass.Instance;
@@ -83,21 +82,20 @@ namespace SingletonPattern
                 //一般使用Task.Run(),需要对长时间运行计算的人物进行精细控制
                 Task.Factory.StartNew(() =>
                 {
-                    SingletonClass singletonClass3 = SingletonClass.Instance;
-                    SingletonClass singletonClass4 = SingletonClass.Instance;
+                    var singletonClass3 = SingletonClass.Instance;
+                    var singletonClass4 = SingletonClass.Instance;
                 });
-            }
             //-实例化时间：2024/4/10 17:25:14
             //-结束
             //****
 
 
-            Console.ReadKey(); 
+            Console.ReadKey();
             Console.WriteLine("结束");
         }
-        
+
         /*
-         * 关键字
+         * 单例模式 关键字
          * 饿汉模式 使用静态实例化
          * 懒汉模式 只有第一次调用才自行实例化，使用嵌套类进行实例化声明，第一次调用嵌套类属性才会实例化
          * 多线程单例，Lock，双重验证

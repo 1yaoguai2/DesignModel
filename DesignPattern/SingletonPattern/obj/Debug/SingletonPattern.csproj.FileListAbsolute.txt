@@ -4,3 +4,9 @@ D:\XKZ\DesignModel\DesignModel\SingletonPattern\obj\Debug\SingletonPattern.cspro
 D:\XKZ\DesignModel\DesignModel\SingletonPattern\obj\Debug\SingletonPattern.csproj.CoreCompileInputs.cache
 D:\XKZ\DesignModel\DesignModel\SingletonPattern\obj\Debug\SingletonPattern.exe
 D:\XKZ\DesignModel\DesignModel\SingletonPattern\obj\Debug\SingletonPattern.pdb
+D:\XKZ\DesignPattern\DesignPattern\SingletonPattern\bin\Debug\SingletonPattern.exe
+D:\XKZ\DesignPattern\DesignPattern\SingletonPattern\bin\Debug\SingletonPattern.pdb
+D:\XKZ\DesignPattern\DesignPattern\SingletonPattern\obj\Debug\SingletonPattern.csproj.AssemblyReference.cache
+D:\XKZ\DesignPattern\DesignPattern\SingletonPattern\obj\Debug\SingletonPattern.csproj.CoreCompileInputs.cache
+D:\XKZ\DesignPattern\DesignPattern\SingletonPattern\obj\Debug\SingletonPattern.exe
+D:\XKZ\DesignPattern\DesignPattern\SingletonPattern\obj\Debug\SingletonPattern.pdb

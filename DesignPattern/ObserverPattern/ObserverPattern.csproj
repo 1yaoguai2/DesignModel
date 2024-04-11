@@ -5,11 +5,11 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{D97FCD83-AAC1-4BF5-8355-23B1FF9596FA}</ProjectGuid>
+        <ProjectGuid>{71EE46BA-565B-4E8D-9262-D79817D2F75B}</ProjectGuid>
         <OutputType>Exe</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>SingletonModel</RootNamespace>
-        <AssemblyName>SingletonPattern</AssemblyName>
+        <RootNamespace>ObserverPattern</RootNamespace>
+        <AssemblyName>ObserverPattern</AssemblyName>
         <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -40,9 +40,11 @@
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="SingletonClass.cs"/>
+        <Compile Include="IFServer.cs" />
+        <Compile Include="ObserverClass.cs" />
         <Compile Include="Program.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
+        <Compile Include="ThemeClass.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,19 +1,11 @@
 ﻿using System;
 
+// ReSharper disable once CheckNamespace
 namespace SingletonPattern
 {
     //sealed 密封的，不可被继承 
     public sealed class SingletonClass
     {
-        //没有创建单例模式时，普通类 0，构造函数必须为公开的
-        private DateTime NowTime { get; set; }
-
-        private SingletonClass()
-        {
-            NowTime = DateTime.Now;
-            Console.WriteLine($"实例化时间：{NowTime}");
-        }
-
         //普通单例模式 A
         // private static SingletonClass instance = null;
         //
@@ -103,18 +95,21 @@ namespace SingletonPattern
         //     }
         //     internal static readonly SingletonClass instance = new SingletonClass(); //内部的只读实例
         // }
-        
+
         //Lazy泛型实现延迟实例化，会隐式调用LazyThreadSafetyMode.ExecutionAndPublication以实现lazy<Singleton>线程安全模式. G
         private static readonly Lazy<SingletonClass> lazy = new Lazy<SingletonClass>(() => new SingletonClass());
-        
-        public static SingletonClass Instance
+
+        private SingletonClass()
         {
-            get
-            {
-                return lazy.Value;
-            }
+            NowTime = DateTime.Now;
+            Console.WriteLine($"实例化时间：{NowTime}");
         }
-        
+
+        //没有创建单例模式时，普通类 0，构造函数必须为公开的
+        private DateTime NowTime { get; }
+
+        public static SingletonClass Instance => lazy.Value;
+
         //ICO容器单例注册 prism
     }
 
