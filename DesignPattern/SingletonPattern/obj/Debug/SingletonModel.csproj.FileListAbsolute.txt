@@ -1,0 +1,6 @@
+D:\Rider\DesignModel\SingletonModel\bin\Debug\SingletonModel.exe
+D:\Rider\DesignModel\SingletonModel\bin\Debug\SingletonModel.pdb
+D:\Rider\DesignModel\SingletonModel\obj\Debug\SingletonModel.csproj.AssemblyReference.cache
+D:\Rider\DesignModel\SingletonModel\obj\Debug\SingletonModel.csproj.CoreCompileInputs.cache
+D:\Rider\DesignModel\SingletonModel\obj\Debug\SingletonModel.exe
+D:\Rider\DesignModel\SingletonModel\obj\Debug\SingletonModel.pdb
