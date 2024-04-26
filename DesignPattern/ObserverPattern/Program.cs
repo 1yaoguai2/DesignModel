@@ -6,6 +6,18 @@ namespace ObserverPattern
     {
         public static void Main(string[] args)
         {
+            var o = new Observable<long>();
+            XuSubscribe xu = new XuSubscribe();
+            Subscribe xin = new XinSubscribe();
+            
+            o.Subscribe(xu);
+            o.Subscribe(xin);
+
+            while (Console.ReadLine() != "Enter")
+            {
+                o.Notify(DateTimeOffset.Now.ToUnixTimeSeconds());
+            }
+
             //****
             //实现普通的观察者模式 A
             // ThemeClass themeObject = new ThemeClass("小更新","修复记忆");
@@ -30,17 +42,21 @@ namespace ObserverPattern
             //-xiaocheng收到主题更新通知：名称修改为接口更新，信息修改为使用接口跟新观察者
             //-xiaoxu收到主题更新通知：名称修改为接口更新，信息修改为使用接口跟新观察者
             //****
-            //实现委托通知观察者
-            ThemeClass themeObject = new ThemeObjectClass("委托跟新", "使用委托通知订阅者跟新");
-            ObserverClass observerObject1 = new ObserverClass("xiaowang");
-            ObserverClass observerObject2 = new ObserverClass("dawang");
-            //添加订阅者
-            themeObject.AddObserverObject(new RenovateEventHandler(observerObject1.RenovateInfo));
-            themeObject.AddObserverObject(new RenovateEventHandler(observerObject2.RenovateInfo));
-            themeObject.Update();
-            //移除一个订阅者
-            themeObject.RemoveObserverObject(new RenovateEventHandler(observerObject1.RenovateInfo));
-            themeObject.Update();
+
+
+            // //实现委托通知观察者
+            // ThemeClass themeObject = new ThemeObjectClass("委托跟新", "使用委托通知订阅者跟新");
+            // ObserverClass observerObject1 = new ObserverClass("xiaowang");
+            // ObserverClass observerObject2 = new ObserverClass("dawang");
+            // //添加订阅者
+            // themeObject.AddObserverObject(new RenovateEventHandler(observerObject1.RenovateInfo));
+            // themeObject.AddObserverObject(new RenovateEventHandler(observerObject2.RenovateInfo));
+            // themeObject.Update();
+            // //移除一个订阅者
+            // themeObject.RemoveObserverObject(new RenovateEventHandler(observerObject1.RenovateInfo));
+            // themeObject.Update();
+
+
             //-xiaowang收到主题更新通知：名称修改为委托跟新，信息修改为使用委托通知订阅者跟新
             //-dawang收到主题更新通知：名称修改为委托跟新，信息修改为使用委托通知订阅者跟新
             //-dawang收到主题更新通知：名称修改为委托跟新，信息修改为使用委托通知订阅者跟新

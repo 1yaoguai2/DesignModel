@@ -114,6 +114,10 @@ namespace ObserverPattern
     {
         public ThemeObjectClass(string code, string info) : base(code, info)
         {
+            
         }
+
     }
+    
+    
 }
